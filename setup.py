@@ -3,7 +3,7 @@ import os
 from distutils.core import setup
 
 
-version = '0.1-dev'
+version = '0.1.0'
 
 
 def read(f):
@@ -46,6 +46,5 @@ setup(name='aiohttp-tal',
             'flake8-isort',
           ],
       },
-      data_files=['README.rst', 'CHANGES.txt', 'LICENSE'],
       include_package_data=True
       )

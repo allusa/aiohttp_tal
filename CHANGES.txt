@@ -2,8 +2,8 @@ CHANGES
 =======
 
 
-0.1-dev (unreleased)
---------------------
+0.1.0 (2019-03-28)
+------------------
 
 - Initial release.
   Based on aiohttp-jinja2 copyright by Andrew Svetlo and aio-libs team.
