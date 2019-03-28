@@ -1,0 +1,22 @@
+language: python
+dist: xenial
+python:
+  - 3.6
+  - 3.7
+
+install:
+  pip install -r requirements-dev.txt
+
+script:
+  pytest --flake8 --cov=aiohttp_tal
+
+deploy:
+  provider: pypi
+  user: "timbaler"
+  password:
+    secure: "E1LchYFdfb0KsHSbZf3ujMtP+Sm4rwTpKGEZV0kps1RevAxSlkpETWXJsFYTYwL9cVBZ3w+Hpbf7jGYQQUu2BP/hb5WMjGsAcl5ehq4Td45sUcRQi3X2z0xC+Fl5rsWSnQCamC5X56fii67LakDvrSTIvm8w/y5iPmC29DpDQBUDdyM2u3yKWDxVakmREZ65PpbvJdEVruL2vk8HI32wWe8AOmaGhDnfjixgAMy5nP6emk0tZ8oOcuNuDQbn8MA9vlh+WGiwci/t36XAgKH4vgqakesRnWPnzzLFK4XNn4Nka7W9DaVXS9L1pT4b/ddq9qb/XYvl8lOoI1vR6rnJagCUm+ONkDzzZa7ZT13zgnlurv1nmFQPBZRX8zQjPDmi4X5vnaGwftckvFbceSWYN0LyQDqgZYP84HWYlw43Z/a3al+V5CC6jIav7AI2AaLkloSWnvvKW+oY+qLenUv/iD4Zxxp1v3bQs9AkYEVhEYo8kMI7aRUCHN6vYrABZQ32ClfGJUvb7QqgOvdfMKixfbjLbci2awUlBIcmw9OpduBuD0qUDZWp+Hky616sIcrgG5Ruhdp37ycgUfC5sJA56Dju+UQ0OVkRZ+v935Zh1teFAw3DjhQruPSO5EpKTrg1QIzM6Gx91IBcoQJM8doXUxJnYMfgcbJHKkGZs3tv0o0="
+  skip_existing: true
+  on:
+    tags: true
+    branch: master
+    python: 3.7

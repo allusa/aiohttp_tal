@@ -86,6 +86,7 @@ html_theme_options = {
     'description': 'TAL Chameleon template engine renderer for aiohttp.web',
     'github_user': 'allusa',
     'github_repo': 'aiohttp_tal',
+    'travis_button': 'allusa/aiohttp_tal',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

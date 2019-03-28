@@ -1,5 +1,13 @@
 aiohttp_tal
 ===========
+.. image:: https://travis-ci.com/allusa/aiohttp_tal.svg?branch=master
+    :target: https://travis-ci.com/allusa/aiohttp_tal
+.. image:: https://img.shields.io/pypi/v/aiohttp-tal.svg
+    :target: https://pypi.python.org/pypi/aiohttp-tal
+.. image:: https://readthedocs.org/projects/aiohttp-tal/badge/?version=latest
+    :target: https://aiohttp-tal.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 
 TAL_ Chameleon_ template engine renderer for `aiohttp.web`__.
 Based on aiohttp_jinja2_.
@@ -30,6 +38,9 @@ Install requirement and launch tests::
 
 Usage
 -----
+
+For more details on usage, see https://aiohttp-tal.readthedocs.io/en/latest/usage.html.
+
 
 Before template rendering you have to setup *TAL environment* first:
 

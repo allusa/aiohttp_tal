@@ -18,6 +18,9 @@ Please feel free to file an issue on `bug tracker
 <https://github.com/allusa/aiohttp_tal/issues>`_ if you have found a bug
 or have some suggestion for library improvement.
 
+The project uses `Travis <https://travis-ci.com/allusa/aiohttp_tal>`_ for
+Continuous Integration.
+
 
 Contents
 ========
