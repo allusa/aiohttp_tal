@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      metal:use-macro="load: base.html">
+<head>
+  <link href="../static/style.css" rel="stylesheet" tal:condition="nothing" />
+</head>
+<body>
+<div metal:fill-slot="content">
+  <p>${intro}</p>
+
+  <p>
+    To demonstrate a little of the functionality of aiohttp TAL.
+  </p>
+  <b>
+    <a href="translation.html" tal:attributes="href url('translation')">View first page</a>
+  </b>
+</div>
+</body>
+</html>

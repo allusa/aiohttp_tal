@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us"
+      data-metal-use-macro="load: base.html">
+<head>
+  <title>Testing</title>
+  <link href="../static/style.css" rel="stylesheet" data-tal-condition="nothing" />
+</head>
+<body>
+<div data-metal-fill-slot="content">
+
+<p data-tal-condition="intro" data-tal-content="intro">Intro</p>
+
+<b>
+<a href="index.html" data-tal-attributes="href url('index')" title="Go to index">
+  View Index
+</a>
+</b>
+
+</div>
+</body>
+</html>

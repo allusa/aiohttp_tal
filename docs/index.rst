@@ -29,6 +29,7 @@ Contents
    :maxdepth: 2
 
    usage
+   examples
    changelog
 
 
